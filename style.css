@@ -1,0 +1,139 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.site_padding {
+  padding: 0 5% 0 9%;
+}
+
+.top_bar {
+  background-color: #f6f6f6;
+  height: 27px;
+}
+
+.top_bar__left {
+  width: 50%;
+}
+
+.top_bar__right {
+  width: 30%;
+}
+
+.top_bar__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 3px;
+}
+
+.top_bar__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top_bar__menu {
+  display: inline-block;
+  list-style-type: none;
+  background-color: #ffffff;
+  border: 1px solid #bbbbbb;
+  width: 83%;
+  border-top: 0;
+}
+
+.top_bar__summary {
+  width: 83%;
+  display: inline-block;
+  outline: none;
+}
+
+.top_bar__li {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 11px;
+  line-height: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #7e7e7e;
+  width: 100%;
+}
+
+.top_bar__li:hover {
+  color: #444444;
+}
+
+.top_bar__img {
+  visibility: hidden;
+}
+
+.top_bar__button {
+  background: #ffffff;
+  text-align: left;
+  border: 0;
+  padding-top: 4%;
+}
+
+.top_bar__button_left {
+  padding-left: 3%;
+}
+
+.top_bar__a {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 11px;
+  line-height: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #7e7e7e;
+  text-decoration: none;
+}
+
+.top_bar__a:hover {
+  color: #444444;
+}
+
+/* Убираем стандартный маркер Chrome */
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Убираем стандартный маркер Firefox */
+details > summary {
+  list-style: none;
+}
+
+/* Добавляем собственный маркер для закрытого состояния */
+details summary::after {
+  content: '\f107';
+  font-family: "FontAwesome";
+  margin-left: 7px;
+}
+
+/* Добавляем собственный маркер для открытого состояния */
+details[open] summary::after {
+  content: '\f106';
+}
+
+details[open] .top_bar__summary {
+  background-color: #ffffff;
+  border: 1px solid #bbbbbb;
+  border-bottom: 0;
+}
+
+details[open] .top_bar__img {
+  visibility: visible;
+}
+/*# sourceMappingURL=style.css.map */
